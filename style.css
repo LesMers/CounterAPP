@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p {
+font-weight: bold;  
+  }
+  
+  .container-card {
+    text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    
+  }
+  
+  .container-card h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    margin: 5px;
+  }
+  
+  .container-card h2 {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+ 
+/* Add & remove Button */
+
+.count-btn {
+  display: flex;
+}
+
+.container-card button {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.container-card button:not(:disabled):hover,
+.container-card:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.container-card:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+/* Save Button */
+
+#save-btn {
+  background-color: #4a4805;
+  color: white;
+}
